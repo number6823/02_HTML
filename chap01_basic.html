@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!--
+    meta 태그 : 문서읮 정보를 기록하는 태그
+    - charset : 문서의 문자 인코딩을 지정
+    -->
+    <!--
+    title 태그 : 문서의 제목을 지정
+    h1~h6 : 제목에 대한 예제
+          : 의미론 적으로h1이 가장큰 제목,
+          h6로 갈 수록 작은 제목
+    -->
+    <title>라인컴퓨터아트학원</title>
+    <meta charset="UTF-8">
+    <title>라인컴퓨터학원</title>
+</head>
+<body>
+<h1> 이것은 h1 태그입니다</h1>
+<h2> 이것은 h2 태그입니다</h2>
+<h3> 이것은 h3 태그입니다</h3>
+<h4> 이것은 h4 태그입니다</h4>
+<h5> 이것은 h5 태그입니다</h5>
+<h6> 이것은 h6 태그입니다</h6>
+
+
+
+
+
+
+<span>이것은 일반<br />글자입니다.</span>
+
+<!--
+      hr : 절취서능ㄹ 나타낼 때
+      : block 요소
+-->
+<!--   strong : 글자를 굴게 나타내는 inline 요소
+       mark : 형광펜 효과를 넣을떄 / inline 요소
+       -->
+<hr />
+<strong>굵게 표시를 합니다</strong>
+<mark>형광펜 효과를 넣습니다</mark>
+
+<!--
+     목록을 나타내는 태그 2종류
+     ul : unordered list (순서 없는 목록)
+     ol : ordered list (순서 있는 목록
+     -->
+<ul>
+    <li>순서 없는 목록
+    <li>순서 없는 목록
+    <li> 순서 없는 목록
+                        </li>
+</ul>
+    <ol type="i" start="3">
+        <li>순서가 있는 목록
+        <li>순서가 있는 목록
+        <li>순서가 있는 목록
+    </ol>
+
+<!--
+     table : 표를 그리는 태그
+     -thead : 제목 줄을 묶는 태그
+     -tbody : 제목 줄 외의 내용 줄을 묶는 태그
+     -tfooter: 하단에 뭔가 합계 등을 나타낼때 사용할 수있는 태그
+
+     -tr : 한줄을 묶는태그
+     -th : 제목줄에서 한셀을 묶는 태그
+     -td : 제목줄외의 줄에서 한셀을 묶는 태그
+-->
+<table border="1">
+    <thead>
+   <tr>
+       <td>프로토콜</td>
+       <td>포트번호</td>
+       <td>설명</td>
+   </tr>
+    </thead>
+    <tbody>
+        <td>HTTP</td>
+        <td>80</td>
+        <td>보안이 되지 않은 웹서비스  통신</td>
+    </tr>
+    </tbody>
+</table>
+<table border="1">
+    <thead>
+    <tr>
+        <td>프로토콜</td>
+        <td>포트번호</td>
+        <td>설명</td>
+    </tr>
+    </thead>
+    <tbody>
+    <td>HTTP</td>
+    <td colspan="2">2개 셀 합치기</td>
+
+    </tr>
+    </tbody>
+</table>
+<table border="1">
+    <thead>
+    <tr>
+        <th>프로토콜</th>
+        <th>포트번호</th>
+        <th>설명</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <td>80</td>
+    <td>보안이 되지 않은 웹서비스  통신</td>
+    </tr>
+    </tbody>
+</table>
+<span>이것은 span 태그입니다</span>
+<div>이것은 div 태그입니다</div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqzemXiO4kOWmxdQoWYNDVEYszd0inkZJ_o3VpOT3ScfNrKSrSZxz_g6MDn4nBWe0MbOUsE6Py1sh2qNl3W2YvavZawPOdeDv4UUgLK5lIyB8476HSwFJxFBbqUPKcTc&s=10&ec=121532766"
+<!--
+ a 태그 : 링크를 거는 태그
+ 핈후속성 -href :링크 주소
+ 속성-target : 어디에 화면을 뜨울 것인지 결정하는 속성
+ -->
+<a href="https://www.google.com" target="_blank">
+        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqzemXiO4kOWmxdQoWYNDVEYszd0inkZJ_o3VpOT3ScfNrKSrSZxz_g6MDn4nBWe0MbOUsE6Py1sh2qNl3W2YvavZawPOdeDv4UUgLK5lIyB8476HSwFJxFBbqUPKcTc&s=10&ec=121532766</a>
+</a>
+
+<!--
+       from 태그 : 사용자에게 입력받기 위한 태그들을 묶는 태그
+       -->
+    <!--
+               input 태그 :  길질적으로 사용자에게 입력을 받기 위한태그
+               필수 속성-type : 어떤 형태로 사용자에게 입력을 받을 것인지 결정
+                         : 생략하면  text로 동작함(기본갑)
+               -->
+
+<form>
+    <input type="text" /><br/>
+    <input type="password" /><br>
+    <input type="checkbox" /> 동의합니다<br />
+    <input type="email"><br />
+    <input type="date" /><br/>
+    <input type="file" />  <br />
+    <input type="radio" name="gender"/> 남자 <input type="radio" name="gender"/> 여자<br />
+    <input type="tel"><br />
+    <input type="number" /><br/>
+
+
+
+    <!---
+        lavel 태그 : input, select 태그와 짝꿍
+                 해당 input이 무엇을 입력받으려고 하는지 알려주는기능도 함
+                 -->
+    <lavel>
+        회원ID<br />
+        <input type="text" />
+    </lavel><br />
+
+    <label for="userId">회원ID</label><br/>
+    <input type="text" id="userId" /><br/>
+
+<!--
+        select 태그 : 사용자에게 펼침메뉴를 통해 선택을 받을 수 있게 하는태그
+        option 태그 : select 자식 요소로 사용되어야 하며, 각각 항목을 설정하는 태그
+        -필수 속성 :    value- 실제로 사용되는 값
+        -  속성   : selected - 선택된 항목을 표시함
+        \
+-->
+
+    <select>
+        <option value="010">010</option>
+        <option value="011">011</option>
+        <option value="016">016</option>
+        <option value="017">017</option>
+        <option value="018">018</option>
+        <option value="019" selected>019</option>
+    </select>
+
+
+
+    <!--
+        button 태그 : 버튼을 만드는 태그
+        -->
+    <button>회원가입</button>
+
+
+
+</form>
+</body>
+</html>

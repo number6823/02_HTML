@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1e293b;
+    overflow: hidden;      /* 스크롤 바가 생기지 않음 */
+
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+    height: 90vh;
+    gap : 20px;
+
+}
+
+.card {
+    flex: 1 1 calc(50% - 20px);
+       /* 동적으로 값이 계속 변하므로, 상대값과 절대값을 계산할 때 calc() 사용 */
+    background-color:  white;
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+   min-height: 220px;
+
+}
+
+.storage-area {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: flex-start; /* 중요 */
+}
+
+.stats-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.hdd-icon {
+    width: 100px;
+    height: 100px;
+    background-color:  #1e293b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hdd-inner {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.hdd-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hdd-card {
+    justify-content: center;
+    align-items: center;
+}
+
+.hdd-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.hdd-dots > div {
+    width: 6px;
+    height: 6px;
+    background-color: #aaaaaa;
+    border-radius: 50%;
+}
